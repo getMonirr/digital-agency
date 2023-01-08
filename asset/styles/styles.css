@@ -20,11 +20,22 @@ body {
     align-items: center;
     display: flex;
 }
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
 /************************ Nav bar style ******************************/
+.nav-bg {
+    background-color: var(--nav-bg);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
 .navbar {
     height: 70px;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--nav-bg);
 }
 .navbar ul {
@@ -39,15 +50,20 @@ body {
     color: var(--text-color1);
 }
 /************************ hero/banner style ******************************/
+header {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(../image/background.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 .hero-content {
     width: 50%;
 }
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(../image/background.jpg) no-repeat;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-top: 70px;
     
 }
 .hero-title {
